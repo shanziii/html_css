@@ -1,11 +1,15 @@
-body {
+html, body {
   background-color: #100940;
   font-family: 'Open Sans';
   height:100%;
 }
 
 main{
+    min-height: 100%;
     margin-inline: 80px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 nav {
@@ -58,6 +62,7 @@ nav h1{
     background-color: #EA5174;
     color: #100940;
     border:2px solid #E2C03C;
+    transition: background-color 0.5s ease-in-out;
 
 }
 
@@ -72,6 +77,8 @@ nav h1{
     font-weight: 400;
     border:2px solid #4ABCE2;
     margin-left: 10px;
+    transition: background-color 0.5s ease-in-out;
+
 }
 
 #contactBtn:hover{
@@ -94,6 +101,7 @@ nav h1{
 
 .banner p{
     color: #ffff;
+    line-height: 25px;
 
 }
 
@@ -116,4 +124,94 @@ nav h1{
 
 .banner-image{
     max-width:530px;   
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    color: #ffff;
+    padding-top: 4em; 
+    padding-bottom: 2em;
+   /* gap: 12em; */
+}
+
+footer ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.footer-header{
+    padding-bottom:0.3em;
+}
+
+#author{
+    font-size: 1.4em;
+    color:#E2C03C;
+    font-weight: bold;
+}
+
+.testimonials{
+    display:flex; 
+    justify-content: center;
+    flex-direction: column;
+}
+
+.testimonials h1{
+    text-align: center;
+    color:#ffff;
+    font-size: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.card{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #B2D4FB ;
+    padding: 1.5em 1.3em;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 10px rgba(93, 98, 117, 0.70);
+    transition: transform 0.3s ease-in-out;
+    /*height:380px; */
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card img{
+    width:120px;
+    align-self: center;
+    border-radius: 50%;
+    border: 5px solid #005AC2;
+}
+
+.card p{
+    margin-top: 1.5em;
+    text-align: center;
+    font-weight: thin;
+    font-size: 1.15em;
+    color:#444;
+}
+
+.card h5{
+    text-align: center;
+    font-size: 1.5em ;
+    margin:0px;
+    color:#100940;
+    font-weight: bold;
+}
+
+.card h6{
+    text-align: center;
+    font-size: 1em ;
+    margin:0px;
+}
+
+.cards{
+    display:flex;
+    justify-content: center;
+    gap: 5.5em;
 }
